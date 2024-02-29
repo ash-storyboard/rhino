@@ -27,13 +27,13 @@ Pod::Spec.new do |s|
     s.source = { :git => "https://github.com/Picovoice/rhino.git", :tag => "Rhino-iOS-v3.0.1" }
     s.ios.deployment_target = '13.0'
     s.swift_version = '5.0'
-    s.vendored_frameworks = 'lib/ios/PvRhino.xcframework'
+    s.vendored_frameworks = 'lib/ios/Package/Soruces/PvRhino.xcframework'
     s.resource_bundles = {
       'RhinoResources' => [
         'lib/common/rhino_params.pv'
       ]
     }
-    s.source_files = 'binding/ios/*.{swift}'
+    s.source_files = 'binding/ios/Package/Sources/*.{swift}'
     s.exclude_files = 'binding/ios/RhinoAppTest/**'
 
     s.dependency 'ios-voice-processor', '~> 1.1.0'
