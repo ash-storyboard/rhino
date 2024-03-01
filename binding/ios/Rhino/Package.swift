@@ -12,8 +12,8 @@ let package = Package(
             targets: ["Rhino"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ash-storyboard/rhino/lib/ios/Package", from: "3.0.1"),
-        .package(url: "https://github.com/ash-storyboard/ios-voice-processor/sdk/ios/Package", from: "1.1.0"),
+        .package(name: "PvRhino", path: "../PvRhino"),
+        .package(name: "ios-voice-processor", path: "../ios-voice-processor"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
